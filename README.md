@@ -7,8 +7,8 @@
 
 ## ✨ Estudiante
 
-**Nombre:** Bruselario, Sebastián
-**Comisión:** M2025-7
+**Nombre:** Abril Marianela Garcia Goria  
+**Comisión:** M2025-1
 
 ---
 
