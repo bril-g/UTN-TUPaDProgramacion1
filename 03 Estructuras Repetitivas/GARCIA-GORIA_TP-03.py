@@ -58,6 +58,65 @@ while numero != numero_random:
 
 print(f"Acertaste. Cantidad de intentos: {intentos}")
 
-# 6) Desarrolla un programa que imprima en pantalla todos los números pares comprendidos entre 0 y 100, en orden decreciente.
-for i in range(0, 101, -2):
+# 6) Programa que imprima en pantalla todos los números pares comprendidos entre 0 y 100, en orden decreciente.
+for i in range(100, -1, -2):
     print(i)
+
+# 7) Programa que calcule la suma de todos los números comprendidos entre 0 y un número entero positivo indicado por el usuario.
+numero = int(input("Ingresa un número entero positivo: "))
+
+suma = 0
+
+for i in range(0, numero + 1):
+    suma += i
+
+print(f"La suma es: {suma}")
+
+# 8) Programa que permita al usuario ingresar 100 números enteros. 
+# Luego, el programa debe indicar cuántos de estos números son pares, cuántos son impares, 
+# cuántos son negativos y cuántos son positivos. 
+pares = 0
+impares = 0
+negativos = 0
+positivos = 0
+
+for i in range(100):
+    numero = int(input("Ingrese un número: "))
+
+    if numero % 2 == 0:
+        pares += 1
+    else:
+        impares += 1
+
+    if numero > 0:
+        positivos += 1
+    elif numero < 0:
+        negativos += 1
+
+print(f"Pares: {pares}")
+print(f"Impares: {impares}")
+print(f"Positivos: {positivos}")
+print(f"Negativos: {negativos}")
+
+# 9) Programa que permita al usuario ingresar 100 números enteros y luego calcule la media de esos valores.
+suma = 0
+
+for i in range(100):
+    numero = int(input("Ingrese un número entero: "))
+    suma += numero
+
+media = suma / 100
+print(f"Media: {media}")
+
+# 10) Programa que invierta el orden de los dígitos de un número ingresado por el usuario.
+numero = int(input("Ingrese un número positivo: "))
+
+invertido = 0
+
+while numero > 0:
+    digito = numero % 10
+    invertido = invertido * 10 + digito
+    numero = numero // 10
+
+print(f"Número invertido: {invertido}")
+
