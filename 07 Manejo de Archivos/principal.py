@@ -10,7 +10,7 @@ with open ("productos.txt", "r") as archivo:
 
 # 3. Agregar productos desde teclado: 
 
-print("Ingresa los datos del nuevo producto:")
+print("Ingrese los datos del nuevo producto:")
 
 nombre = input("Nombre: ")
 precio = input("Precio: ")
